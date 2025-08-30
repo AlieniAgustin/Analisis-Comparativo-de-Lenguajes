@@ -1,0 +1,13 @@
+Program CallToC;
+Var x:integer; external name 'y';
+Procedure inc_x; external name 'inc_y';
+begin { programa principal }
+x := 1;
+inc_x;
+writeln('x=',x)
+end.
+
+{con grep Var calltoc.pas me retorna la linea donde aparece Var}
+{con grep {*} calltoc.pas me retorna las lineas donde hay comentarios}
+{con grep begin calltoc.pas | wc -l me cuenta la cantidad de apariciones de begin}
+{con grep end calltoc.pas | wc -l me cuenta la cantidad de apariciones de end}

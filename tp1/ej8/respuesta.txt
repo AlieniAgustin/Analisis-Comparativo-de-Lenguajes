@@ -1,0 +1,8 @@
+gcc -c inc.c -o inc.o
+ar rcs libmylib.a inc.o crea la biblioteca estatica libmylib con el codigo objeto de inc.o 
+
+en el main con void inc_y(void) hago declaracion de la funcion de la biblioteca 
+con extern int y declaro la variable global 
+
+para compilar main utilizando la biblioteca libmylib hago 
+gcc main.c -L. -lmylib -o main

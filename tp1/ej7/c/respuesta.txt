@@ -1,0 +1,6 @@
+con gcc -c inc.c -o inc.o solo se genera el codigo objeto que contiene 
+el codigo maquina de inc_y, y el simbolo global y, junto con una tabla de simbolos que describe como exponerlos para que otro lenguaje/objeto los pueda usar.
+El compilador c ya tradujo el codigo a assembly/binario.
+En calltoc.pas pongo {$L inc.o} para decirle al linker de pascal que incluya el codigo objeto inc.o en el link final.
+Asi, cuando el linker busca la implementacion de y, inc_y, las encuentra en inc.o 
+Luego fpc calltoc.pas para compilar, ./calltoc para ejecutar

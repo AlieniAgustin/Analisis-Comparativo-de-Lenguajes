@@ -1,0 +1,4 @@
+creo el archivo objeto de inc 
+creo la biblioteca estatica libmylib que tiene inc.o 
+en calltoc.pas debo poner {$L libmylib.a} para incluir la biblioteca estatica libmylib 
+ejecuto con ./calltoc

@@ -1,0 +1,4 @@
+El error es undefined reference to y, lo mismo ocurre con inc_y
+lo que significa que el compilador puede generar el codigo pascal, 
+pero cuando el linker intenta combinar el codigo con otras bibliotecas para ejecutar el ejecutable final, no encuetra las definiciones de y ni
+de inc_y
