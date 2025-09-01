@@ -1,0 +1,15 @@
+local X in 
+  local Y in 
+    local Z Person in
+      Z = 26
+      Y = Z
+      Person = person(name: 'George' age : Y)
+      X = Person
+      
+      
+      {Show Y}
+      {Show X}
+    end 
+  end
+  
+end 
