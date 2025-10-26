@@ -6,13 +6,11 @@ public:
   void sayHello(){cout << "Hola desde A\n";}
 };
 
-class B : public A {};
-class C : public A {};
+class B : virtual public A {};
+class C : virtual public A {};
 class D : public B, public C {};
 
 int main(){
   D obj;
-  //obj.sayHello() error por ambiguedad
-  obj.B::sayHello();
-  obj.C::sayHello();
+  obj.sayHello();
 }
