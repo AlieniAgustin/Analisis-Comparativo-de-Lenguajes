@@ -4,10 +4,10 @@ public class Test{
     B b= new B();
     B c = new C();
 
-    //a.type(b);
-    //b.type(a);
-    //b.type(b);
-    c.type((A) c); //siempre el this hara referencia a c
-    //c.type((C) c);
+    a.type(b);
+    b.type(a);
+    b.type(b);
+    c.type((A) c);
+    c.type((C) c);
   }
 }
