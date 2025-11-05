@@ -1,0 +1,5 @@
+local X Y T T1 Q S in
+   X = 1
+   T = thread fun{S}
+		 Y = X
+		 {Browse T}
